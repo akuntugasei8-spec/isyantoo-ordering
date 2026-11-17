@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isyantoo | Pesan Makanan</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">🍽️ Isyantoo</a>
+  <nav><a href="#menu">Menu</a><a href="#pesanan">Keranjang</a><a href="/admin.html">Admin</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">KULINER • PESAN ONLINE</p><h1>Selamat Datang di <span>Isyantoo</span></h1>
+    <p>Pilih menu favoritmu, pesan dengan mudah, dan nikmati hidangan pilihan kami.</p>
+    <a class="primary" href="#menu">Lihat Menu</a></div>
+    <div class="hero-art">🍜</div>
+  </section>
+  <section id="menu" class="section">
+    <div class="section-head"><div><p class="eyebrow">PILIHAN HARI INI</p><h2>Menu Kami</h2></div><span id="menu-count" class="muted"></span></div>
+    <div id="menu-list" class="menu-grid"><p>Memuat menu...</p></div>
+  </section>
+  <section id="pesanan" class="section order-layout">
+    <div><p class="eyebrow">CHECKOUT</p><h2>Keranjang & Pemesanan</h2><div id="cart-list" class="cart-list">Keranjang masih kosong.</div><div class="total-row"><span>Total</span><strong id="cart-total">Rp0</strong></div></div>
+    <form id="order-form" class="panel">
+      <h3>Data Pemesan</h3>
+      <label>Nama lengkap<input name="customer_name" required maxlength="120" placeholder="Nama kamu"></label>
+      <label>Nomor WhatsApp<input name="whatsapp" required maxlength="30" placeholder="08xxxxxxxxxx"></label>
+      <label>Catatan pesanan<textarea name="notes" rows="3" placeholder="Contoh: tidak pedas"></textarea></label>
+      <button class="primary full" type="submit">Kirim Pesanan</button>
+      <p id="order-message" class="message"></p>
+    </form>
+  </section>
+</main>
+<footer>© <span id="year"></span> Isyantoo Ordering</footer>
+<script src="/app.js"></script>
+</body>
+</html>
